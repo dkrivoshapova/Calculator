@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>plotwindow</class>
+ <widget class="QDialog" name="plotwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>559</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#808080;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="2">
+    <widget class="QLabel" name="label_4">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#ffffff;</string>
+     </property>
+     <property name="text">
+      <string>Ymax</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#ffffff;</string>
+     </property>
+     <property name="text">
+      <string>Xmin</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="x_max">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QLineEdit" name="scale">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>0.5</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#ffffff;</string>
+     </property>
+     <property name="text">
+      <string>Xmax</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLineEdit" name="y_min">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>-10</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="x_min">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>-10</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="5">
+    <widget class="QCustomPlot" name="widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLineEdit" name="y_max">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QLabel" name="label_5">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#ffffff;</string>
+     </property>
+     <property name="text">
+      <string>Scale:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4" colspan="2">
+    <widget class="QPushButton" name="get_btn">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: #808080;
+border: 1px solid #DBC3C3;
+color: #91b9ba;
+border-radius: 7px;;
+}
+
+QPushButton:hover{
+background-color: #DBC3C3;
+border: 1px solid gray;
+color: #FFFFFF;
+border-radius: 7px;
+}
+
+QPushButton:pressed{
+background-color: #808080;
+border: 1px solid gray;
+color: #FFFFFF;
+border-radius: 7px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Enter</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#ffffff;</string>
+     </property>
+     <property name="text">
+      <string>Ymin</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>../src/temp/qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

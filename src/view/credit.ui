@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Credit</class>
+ <widget class="QDialog" name="Credit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #808080;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>Overpayment</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QRadioButton" name="yearButton">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>Year</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>Amount</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QRadioButton" name="monthButton">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>Month</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="term_line">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>Term</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="amount_line">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="rate_line">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>Monthly payment</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_6">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>Total payment</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="pushButton">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+       <pointsize>14</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: #808080;
+border: 1px solid #DBC3C3;
+color: #91b9ba;
+border-radius: 7px;;
+}
+
+QPushButton:hover{
+background-color: #DBC3C3;
+border: 1px solid gray;
+color: #FFFFFF;
+border-radius: 7px;
+}
+
+QPushButton:pressed{
+background-color: #808080;
+border: 1px solid gray;
+color: #FFFFFF;
+border-radius: 7px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Calc</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFAFA;</string>
+     </property>
+     <property name="text">
+      <string>Interest rate</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" colspan="2">
+    <widget class="QComboBox" name="credit_type">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#FFFAFA;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>annuity</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>differentiated</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="2">
+    <widget class="QLineEdit" name="payment_line">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" colspan="2">
+    <widget class="QLineEdit" name="overp_line">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" colspan="2">
+    <widget class="QLineEdit" name="totalp_line">
+     <property name="font">
+      <font>
+       <family>PT Sans</family>
+      </font>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

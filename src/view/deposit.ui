@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Deposit</class>
+ <widget class="QDialog" name="Deposit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>577</width>
+    <height>309</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#808080;</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>561</width>
+     <height>292</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>PT Sans</family>
+    </font>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item row="3" column="0">
+     <widget class="QLabel" name="interest">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #FFFAFA;</string>
+      </property>
+      <property name="text">
+       <string>Interest rate</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="2">
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #FFFAFA;</string>
+      </property>
+      <property name="text">
+       <string>Deposit amount </string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLineEdit" name="amount_lineEdit">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QRadioButton" name="years">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <pointsize>13</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#DBC3C3</string>
+      </property>
+      <property name="text">
+       <string>Years</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QCheckBox" name="capitalization">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#91b9ba;</string>
+      </property>
+      <property name="text">
+       <string>Capitalization</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QRadioButton" name="months">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <pointsize>13</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#DBC3C3</string>
+      </property>
+      <property name="text">
+       <string>Months</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #FFFAFA;</string>
+      </property>
+      <property name="text">
+       <string>Tax amount</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QLineEdit" name="interest_lineEdit">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="periodicity">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #FFFAFA;</string>
+      </property>
+      <property name="text">
+       <string>Periodicity of payments</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="amount">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #FFFAFA;</string>
+      </property>
+      <property name="text">
+       <string>Amount</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="2">
+     <widget class="QLineEdit" name="total">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QComboBox" name="payment_type">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Every day</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Every week</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Once a month</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Once a quarter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Every six months</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Once a year</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QLineEdit" name="term_lineEdit">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QLineEdit" name="tax">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLineEdit" name="incom">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #FFFAFA;</string>
+      </property>
+      <property name="text">
+       <string>Accrued interest</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="term">
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #FFFAFA;</string>
+      </property>
+      <property name="text">
+       <string>Term</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1" colspan="2">
+     <widget class="QPushButton" name="Calc">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <family>PT Sans</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: #91b9ba;
+border: 1px solid gray;
+color: #FFFFFF;
+border-radius: 5px;;
+}
+QPushButton:pressed{
+background-color: #808080;
+border: 1px solid gray;
+color: #FFFFFF;
+border-radius: 16px;
+}
+
+QPushButton:hover{
+background-color: #808080;
+border: 1px solid #DBC3C3;
+color: #91b9ba;
+border-radius: 7px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Calc</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0" colspan="3">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
